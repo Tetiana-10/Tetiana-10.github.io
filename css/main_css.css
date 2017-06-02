@@ -1,0 +1,215 @@
+body,html{
+background-color:black;
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+    color: #fff;
+	font-weight: 400;
+	margin:0;
+	overflow-x:hidden;
+}
+.titul{
+  background-image:url(titul.jpg);
+  background-size:cover;
+  width:100%;
+  height:800px;
+}
+h3{
+	font-size:0.9em;
+	color:black;
+  text-align:center;
+  margin-top:10px;
+}
+form{
+background-image:url("back.jpg");
+height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+background-size:cover;
+}
+h2{
+	font-size:0.9em;
+	background-color:black;
+	margin-left:1em;
+}
+h1{
+color:black;
+font-size:1em;
+text-align:center;
+}
+.monaco{
+height:500px;
+}
+/* це для форми*/
+.wrapper{
+	margin-top:0.7em;
+	background: rgba(0, 0, 0, 0.9);
+	color:white;
+	width: 100%;
+	height: 100%;
+}
+/* це для головного зображення*/
+.wrapper1{
+	background: rgba(0, 0, 0, 0.5);
+	color:white;
+	width: 100%;
+	height: 100%;
+}
+.forchange{
+	background-color:black;
+	margin-bottom:0;
+}
+.titletclass{
+	display:block;
+  padding-left:150px;
+  font-size:1.7em;
+  line-height:15em;
+  text-align:center;
+}
+
+form{
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+    color: #fff;
+	font-size:1em;
+	font-weight: 400;
+}
+/* для полів форми*/
+.formstyle{
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+font-size:1em;
+color: black;
+border-radius:8px;
+}
+.forselect{
+color: black;
+}
+label{
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+font-size:1em;
+color: white;
+margin-bottom:0;
+}
+/* додаємо для webkit - так як валідатор свариться */
+.rb{
+  transform:scale(1.5);
+  -webkit-transform:scale(1.5);
+  opacity:0.9;
+  cursor:pointer;
+}
+.vasclass{
+color:black;
+}
+.nameclass{
+margin-bottom:0;
+}
+.btn{
+margin-top:10px;
+display:block;
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+border-radius:8px;
+font-size:1em;
+}
+/* форму розбиваємо на два блоки, щоб вона не була розтягнутою по формі */
+.additional,.essential{
+padding:0;
+margin:0;
+display:inline-table;
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+    border-radius:8px;
+	font-size:1em;
+}
+.essential{
+margin-left:0.5em;
+}
+/* другий стовпчик форми*/
+.additional{
+padding-left:60px;
+}
+.formonaco{
+padding:0;
+margin:0;
+}
+.btn{
+cursor:pointer;
+}
+footer{
+background-color:black;
+color:white;
+position:absolute;
+margin:0;
+    width: 99%;
+}
+.personalisation{
+color:black;
+padding-left:1em;
+background-color:Gainsboro;
+  width:100%;
+  height:500px;
+}
+progress{
+  background-color:pink;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+#person_inf{
+ text-align:left;
+ overflow-x:hidden;
+}
+.fileinput{
+ border-radius:10px;
+ height:2em;
+ font-size:1em;
+}
+#stop{
+	background-color:black;
+	padding:0.3em;
+	margin-right:0.3em;
+	display:inline-block;
+	border-style:solid;
+ border-radius:5px;
+ height:1.1em;
+ font-size:1em;
+ cursor:pointer; 
+}
+.foto{
+ border-color:white;
+ border-style:dotted;
+ margin-bottom:0.5em;
+}
+@media screen and (max-width:854px) {
+	/* якщо не напишемо буде великий відступ зліва, див. вище*/
+.additional{
+padding-left:0;
+}
+.destinclass{
+line-height:24px;
+}
+.titletclass{
+  padding-left:50px;
+  font-size:1.8em;
+  line-height:1em;
+}
+
+#button_result{
+visibility:hidden;
+}
+.table-button{
+   width:15em !important;
+}
+}
+@media screen and (max-width:1300px){
+/* чорний футер займає купу місця на маленькому екрані*/
+footer{
+display:none;
+}
+
+.additional{
+padding-left:0;
+}
+.titletclass{
+  padding-left:50px;
+  font-size:1.8em;
+  line-height:1em;
+}
+
+}

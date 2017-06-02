@@ -1,0 +1,185 @@
+body{
+background-color:Gainsboro;
+}
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
+#red{
+background:red;
+}
+#blue{
+background:blue;
+}
+#green{
+background:green;
+}
+#yellow{
+background:yellow;
+}
+#orange{
+background:orange;
+}
+#black{
+background:black;
+}
+#white{
+background:white;
+border:solid;
+border-color:black;
+vertical-align:central;
+height:40px;
+}
+canvas{
+	background:white;
+	border:solid;
+	border-color:black;
+	margin-top:2em;
+	margin-left:2em;
+}
+.colorline{
+	width:20px;
+height:20px;
+margin-left:1em;
+display:inline-block;
+}
+.button_draw{
+  display:inline-block;
+  margin-top:0.6em;
+  margin-left:2em;
+  border-radius:12px;
+  height:2.5em;
+  width:4em;
+  background:white;
+}
+p{
+text-align:center;
+}
+.colors{
+margin-left:2em;
+}
+.clear,.colors,.canvas{
+ display:inline-block;
+}
+.like{
+display:inline-block;
+}
+.like>button{
+border-radius:8px;
+background-color:white;
+display:table-cell;
+}
+/*=============================*/
+#div1 {
+  height: 140px;
+}
+#inner-dropzone {
+  height: 80px;
+}
+.p1{
+text-align:left;
+}
+.dropzone {
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 80%;
+  transition: background-color 0.3s;
+}
+.copyzone{
+  height:200px;
+}
+.drawing{
+	display:inline-block;
+}
+.immode{
+   border-style:solid;
+   border-color:gray;
+   border-radius:12px;
+}
+#canvas{
+	margin-left:1em;
+	width:97%;
+	height:500px;
+}
+/*for credintials*/
+.credintials{
+display:inline-block;
+vertical-align:top;
+}
+.credintials>p{
+padding-left:0;
+}
+.credintials>input{
+border-radius:12px;
+}
+/*для дата атрибутів*/
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+li {
+  padding: 5px 10px;
+  padding-left:10px;
+  margin: 5px 0;
+  color: white;
+  border-radius: 5px;
+  width:30%;
+  text-align:center;
+  cursor:pointer;
+}
+p{
+text-align:left;
+padding-left:1.2em;
+}
+h2{
+padding-left: 20px;
+}
+.hint {
+  margin-right: 30px;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+span.prise1, span.prise2, span.prise3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  /*float: left;*/
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+span.prise2 {
+  background: #3F51B5;
+}
+
+span.prise1 {
+  background: #8BC34A;
+}
+
+span.prise3 {
+  background: #bb6666;
+}
+
+li[data-type='1'] {
+  background: #8BC34A;
+}
+
+li[data-type='2'] {
+  background: #3F51B5;
+}
+
+li[data-type='3'] {
+  background: #bb6666;
+}
+@media screen and (max-width:638px) {
+	canvas, .colors,.buttons{
+		margin-left:0.6em;
+	}
+}

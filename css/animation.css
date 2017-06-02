@@ -1,0 +1,37 @@
+#anim_div{
+	display:inline-block;
+	width:300px;
+	height:500px;
+	background-image:url('http://s1.iconbird.com/ico/2013/11/481/w256h2561383944523summerswimringnotext.png');
+background-repeat:no-repeat;
+position : relative;
+	}
+	#move_button{
+		font-size:1em;
+		background-color:green;
+		color:white;
+		margin-bottom:2em;
+		border-radius:10px;
+	height:80px;
+	width:280px;
+	}
+#anim_div_1{
+	display:inline-block;
+	width:300px;
+	height:500px;
+	background-image:url('http://s1.iconbird.com/ico/2013/11/491/w256h2561384698911applered.png');
+background-repeat:no-repeat;
+position : absolute;
+right:10px;
+	}
+	#cat{
+	position:relative;
+	margin-left:2em;
+	cursor:pointer;
+	}
+	h3{
+		padding-left:1em;
+	}
+	
+	
+	

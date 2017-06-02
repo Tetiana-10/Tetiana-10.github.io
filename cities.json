@@ -1,0 +1,29 @@
+{
+  "cities": [
+    {
+      "name": "Монако",
+      "country": "Монако",
+      "rate": 12,
+      "sea": true
+    },
+    {
+      "name": "Барселона",
+      "country": "Испания",
+      "rate": 10,
+      "sea": true
+    },
+    {
+      "name": "Венеция",
+      "country": "Италия",
+      "rate": 15,
+      "sea": true
+    },
+    {
+      "name": "Вена",
+      "country": "Австрия",
+      "rate": 9,
+      "sea": false
+    }
+  ]
+}
+

@@ -1,0 +1,147 @@
+body {
+  background-color: #ebebeb;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 32px auto;
+  padding: 32px 10px;
+  position: relative;
+}
+#anim_div, .wrapper,#anim_div_1{
+display:inline-block;
+}
+.result {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 50px;
+}
+
+.coin-container {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto 60px;
+  position: relative;
+  -webkit-perspective: 900px;
+          perspective: 900px;
+}
+
+#coin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #333;
+  border-radius: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  cursor: pointer;
+}
+#coin .coin-side {
+  border-radius: 100%;
+  background-color: #ccc;
+  box-shadow: #333 0px 0px 3px 1px;
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+#coin .coin-side img {
+  width: 100%;
+}
+#coin .tails {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+#coin.is-flipping {
+  -webkit-animation: flipping 0.2s infinite;
+          animation: flipping 0.2s infinite;
+  cursor: wait;
+}
+#coin.is-heads {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+#coin.is-tails {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.btn-container {
+  text-align: center;
+}
+#anim_div{
+height:227px;
+background-repeat:no-repeat;
+}
+.btn {
+  display: inline-block;
+  background-color: #3de290;
+  color: #333;
+  text-decoration: none;
+  padding: 14px 32px 10px 32px;
+  min-width: 192px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn.is-flipping {
+  background-color: #e8304c;
+  color: #eee;
+}
+.btn.is-flipping:hover {
+  background-color: #e8304c;
+  color: #eee;
+  cursor: wait;
+}
+.btn:hover {
+  background-color: #1fcd77;
+}
+.btn:active {
+  background-color: #158b50;
+}
+
+/* FLIPPING ANIMATION */
+@-webkit-keyframes flipping {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+@keyframes flipping {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}

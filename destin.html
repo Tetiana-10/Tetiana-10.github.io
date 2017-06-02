@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+	  <title>Tourister-destination</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!--[if lte IE 8]> 
+<script>
+alert("К сожалению, анимация и другуй важный функционал не поддерживается в ИЕ8");
+document.createElement('header'); 
+document.createElement('nav'); 
+document.createElement('article');
+document.createElement('section'); 
+document.createElement('aside'); 
+document.createElement('footer');
+document.createElement('main');
+</script>
+
+<style> 
+header, nav, article, section, aside, footer,main{ display:block; } 
+#remove{
+  visibility:hidden;
+}
+.cover{
+  background-image:url("pictures/slider-1.jpg");
+  background-size:cover;
+  width:500px;
+  height:300px;
+  display:inline-block;
+  margin-top:20px;
+}
+.substring{
+  visibility:hidden;
+}
+.substringie{
+visibility:visible;
+ margin-top: 0;
+  font-size: 0.7em;
+   text-align: center;
+}
+nav{
+ visibility:hidden;
+}
+</style>
+<![endif]-->
+	  <link rel="stylesheet" href="./css/destination_css.css">
+	  <link rel="stylesheet" href="./css/header.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+    <body>
+	  <header class="header">
+		 <div class="header_item classlogo" id="logo"> Tourister</div>
+	     <div class="header_item  destinclass" id="destination"> Доступные направления</div>
+	     <div class="header_item destinclass" id="anketa">Заполнить анкeту </div>
+		 <div class="header_item" id="tour_creation">Создать свой идеальный тур </div>
+	   </header>
+	   
+	   <main>
+	    <div class="big">
+	    <div class="aside">
+		 <aside>
+		 <p> <a href='#anchor1'>Монако</a> </p>
+		 <p> <a href='#anchor2'>Барселона</a></p>
+		 <p> <a href='#anchor3'>Венеция</a> </p>
+		 <p> <a href='#anchor4'>Вена</a> </p>
+		 </aside>
+		 </div>
+		 <div id="remove" class="slides">
+		  <ul class="bxslider" id="slidu">
+		  <li class="slide showing"><div class="wrapper">Tourister- это партнеры в более чем 50 странах мира</div></li>
+		  <li class="slide"><div class="wrapper">Уже 100 тысяч туристов увидели Мир благодаря Tourister</div></li>
+		  <li class="slide"><div class="wrapper">Мы поможем Вам собрать все необходимое для отдыха</div></li>
+		  <li class="slide"><div class="wrapper">Наши оффисы находятся в самом центре Киева!</div></li>
+		 </ul>
+		 </div>
+		 <p class="substring">Для остановки слайдера нажмите на картинку</p>
+		 <article id="monaco">
+		    <div id='anchor1' class="classanchor1 row row-text">
+		    <h1>Монако</h1>
+			<p id="ajax_monaco">Монако выглядит как декорация к фильму о чужой богатой жизни…. Роскошь здесь спокойно сочетается с умеренностью, старушки в бриллиантах ездят на рейсовых автобусах, а у магазинов Zara паркуются дорогущие Ferrari. И все всем довольны. В Монако сильные мира сего крутят романы, проигрывают бешеные суммы в казино и предаются другим радостям жизни... Там на улице можно встретить эстрадных звезд, топ-моделей и спортивных чемпионов.
+		     </p>
+			 </div>
+			 <div class="photos_row photo-right monaco-picture"> <img alt="picture of monaco" class="monaco-size" src="pictures/monaco-1-1.jpg"></div>
+		 </article>
+		 
+		 <article id="barcelona">
+		    <div id="barcelona-move" class="photos_row photo-left"> <img  alt="picture of barcelona" class="monaco-size" src="pictures/barcelona-1.jpg"></div>
+		    <div id='anchor2' class="row row-text">
+		    <h1>Барселона</h1>
+			<p>Ola, Испания! – родина отважных тореро и страстных Кармен! Cтрана-мечта, страна-загадка! На протяжении всей своей истории Испания волновала воображение человека. Древние греки считали, что в ее садах растут золотые яблоки, для арабов она была Воротами в Рай… Испания - это встреча с гостеприимством и радостью жизни, волнующая испанская гитара, вдохновенные серенады, зажигательное фламенко и знаменитая коррида…
+				</p>
+			</div>
+		 </article>
+		 
+		  <article id="venice">
+		    <div id='anchor3' class="row row-text ">
+		    <h1>Венеция</h1>
+			<p> Вот она – необыкновенная красота и притягательная романтика! О Венеции написано много, но каждый открывает ее для себя заново. Здесь все уникально и удивительно: город напоминает театральные декорации, хранит тайны многих поколений… Кажется, будто само время струится меж стен домов, помнящих славное прошлое свободолюбивой Венецианской республики, имена тех, кто жил, любил и творил в этом городе…
+			</p>
+			</div>
+			 <div class="photos_row photo-right"> <img alt="picture of venice" class="monaco-size" src="pictures/venice-2.jpg"></div>
+		 </article>
+		 
+		 <article id="vena">
+		    <div id="vena-move" class="photos_row photo-left"> <img  alt="picture of vena" class="monaco-size" src="pictures/vienna.jpg"></div>
+		    <div id='anchor4' class="row row-text">
+		    <h1>Вена</h1>
+			<p> Сегодня Вена — это город вальсов, искусств, галерей, музеев и изысканных парковых ансамблей. Но вместе с тем, город абсолютно имперский по духу, столица самой многонациональной европейской империи. Вена сохранила множество черт, присущих столицам больших государственных образований. Величественные храмы, роскошные резиденции августейших особ и вельмож, театры, оперные залы, широкие площади и проспекты. Вена по праву считается одной из самых красивых и интересных столиц мира. Нельзя не упомянуть и набор штампов, хотя и весьма приятных: Моцарт, Штраус, штрудель, шницель и кофе. Все это и даже чуть больше на улицах Вены можно найти с избытком
+			</p>
+			</div>
+		 </article>
+		 </div>
+		 
+		 <nav><a href="#logo">Наверх</a></nav>
+	   </main>
+	   
+	   <footer>
+	    <p> Copyright © 2017 TetianaZubko Inc. All rights reserved.<p>
+	   </footer>
+	    <script src="js/destin.js"></script>
+	</body>
+</html>
+
+

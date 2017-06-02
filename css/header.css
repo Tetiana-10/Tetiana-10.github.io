@@ -1,0 +1,54 @@
+.header_item{
+	display:inline-block;
+	position:relative;
+	line-height:2.8;
+	cursor:pointer;
+}
+/*при наведенні на елементи заголовку навколо з'являється рамка*/
+.classlogo{
+padding-right:15em;
+margin-left:2em;
+}
+#logo{
+padding-right:10em;
+margin-left:2em;
+}
+.destinclass{
+padding-right:10em;
+}
+.header{
+width:100%;
+line-height:2em;
+background-color:black;
+color:white;
+padding:0;
+margin-bottom:0;
+font-size:1.1em;
+}
+footer{
+background-color:black;
+color:white;
+position:absolute;
+margin:0;
+    width: 99%;
+}
+@media screen and (max-width: 1434px){
+#logo {
+    margin-left: 0;
+    margin-right: 10px;
+	display:block;
+}
+.destinclass {
+    line-height: 24px;
+	display:block;
+}
+.header_item{
+	display:block !important;
+}
+#anketa{
+  margin-top:1.3em;
+}
+footer{
+display:none;
+}
+}

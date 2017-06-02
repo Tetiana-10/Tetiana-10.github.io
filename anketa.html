@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+   	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Tourister</title>  
+<!--[if lte IE 8]> 
+<script>
+document.createElement('header'); 
+document.createElement('nav'); 
+document.createElement('article');
+document.createElement('section'); 
+document.createElement('aside'); 
+document.createElement('footer');
+document.createElement('main');
+</script>
+<style> 
+header, nav, article, section, aside, footer,main{ display:block; } 
+.titul{filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#88000000, endColorstr=#88000000);}
+form{filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#88000000, endColorstr=#88000000);}
+</style>
+<![endif]-->
+
+<!--[if Gecko]>
+<script> alert("AAAAAA")</script>
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+<script>
+  webshims.setOptions('waitReady', false);
+  webshims.setOptions('forms-ext', {types: 'date'});
+  webshims.polyfill('forms forms-ext');
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="./css/main_css.css">
+<link rel="stylesheet" href="./css/jquery.cSelect.css">
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/main_2_css.css">
+<link rel="stylesheet" href="./css/1w.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="../jquery.cSelect.css" rel="stylesheet"/>
+	</head>
+    <body>
+	   <header class="header">
+		 <div class="header_item" id="logo"> Tourister</div>
+	     <div class="header_item  destinclass" id="destination"> Доступные направления</div>
+	     <div class="header_item destinclass" id="anketa">Заполнить анкeту </div>
+		 <div class="header_item" id="tour_creation">Создать свой идеальный тур </div>
+	   </header>
+	   
+	   <main>
+	   <h1>Заполните анкету и наши сотрудники подготовят для Вас наилучшие направления</h1>
+	   <form id="form1" onsubmit="return false">
+		  <div class="wrapper">
+		  <div class="essential">
+		  <p>Имя<br /><input type="text" name="firstname" class="formstyle" id="name" placeholder="Имя" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Разрешены как минимум 2 буквы"></p>
+		  <p>Фамилия<br /><input type="text" name="surname" class="formstyle" id="surname" placeholder="Фамилия" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Разрешены только буквы"></p>
+		  <p>Еmail<br /><input type="email" name="email" class="formstyle" pattern="^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$" required id="email" title="например - tanzu97@gmail.com" placeholder="E-mail"></p>
+		  <p>Выберите удобный оффис<br />
+				<select name="office" class="formstyle forselect " id="office">
+					<option value="not-selected">Выберете удобный оффис</option>
+					<option value="vas" class="vasclass" id="vas">г.Киев,ул.Васильковская, 25</option>
+					<option value="lva" id="lva">г.Киев,пл.Льва Толстого,11</option>
+			    </select>
+		  </p>
+		  <p> Введите номер телефона:<br>
+		  <input type="tel" name="usrtel" class="formstyle" id="usrtel"  pattern="^\d{3}-\d{3}-\d{2}-\d{2}$" required title="Например: 099-712-21-80"></p>
+		  <p>В какую страну хотите поехать?<br>
+		  <input list="country" class="formstyle" id = "countrylist" required name="countries" >
+		      <datalist id="country">
+			   <option value="Монако">Монако</option>
+			   <option value="Испания">Испания</option>
+			   <option value="Италия">Италия</option>
+			   <option value="Франция">Франция</option>
+			   </datalist>
+			   </p>
+			   <p> Ссылка на понравившийся отель:<br>
+		   <input type="url" name="link" class="formstyle" required id="link"></p>
+		  <p>Сколько человек в группе:<br />
+		  <input type="number" name="number" class="formstyle" id="number" min="1" max="10" required title="Количество от 1 до 10 людей"></p>
+		  <div class="formonaco"><p>Какого цвета кабриолет предпочитаете?:<br>
+          (для путешественников в Монако)</p></div>
+		  <p><input  type="color" name="color" class="formstyle" id="color"></p>
+		  </div>
+		  <div class="additional">
+		  
+		  <div class="foto">
+		  <label for="files">Выберете фото <br><br></label>
+		  <input class="fileinput" name="filename" onchange="previewFile()" type="file" id="files" /><br>
+		  <img src="#" height="200" alt="Image preview..."><br>
+		  </div>
+		 
+		  <label id="diduse">Вы уже пользовались услугами нашей компании?</label><br>
+		  <input type="radio" id="yes" class="rb" value="yes" required name="atmosfera"> <label for="yes">&nbsp; Да</label><br>
+		  <input type="radio" id="no" class="rb"  value="no" name="atmosfera"> <label for="no">&nbsp; Нет</label>
+		  <input type="submit" form="form1" class="btn" value="Отправить" id="button">
+		 </div>
+		 </div>
+		 </form>
+		 <div class="personalisation">
+		 <h3 id="fill_form">Выбранные направления</h3>
+		 <p id="person_inf"> </p>
+		 <h3  id="fill_weather"></h3>
+		 <p id="person_weather"> </p>
+		 </div>
+	   </main>
+	   
+	   <footer>
+	    <p> Copyright © 2017 TetianaZubko Inc. All rights reserved.<p>
+	   </footer>
+	   <script src="js/anketa.js"></script>
+	</body>
+</html>

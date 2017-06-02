@@ -1,0 +1,242 @@
+body,html{
+font-family: "Helvetica Neue","Helvetica",sans-serif;
+	font-weight: 400;
+	background-color:Gainsboro;
+	margin:0;
+}
+.big{
+	margin-left:100px;
+	margin-right:50px;
+}
+a{
+text-decoration:none;	
+color:black;
+border-style:solid;
+padding:0.2em;
+border-radius:8px;
+}
+nav{
+position:fixed;
+right:0;
+text-align:right;
+bottom:20px;
+}
+.substring{
+    margin-top: 5em;
+    font-size: 0.7em;
+    text-align: center;
+}
+a:hover{
+	background:white;
+}
+.photos_row{
+	display:inline-block;
+}
+.row{
+display:inline-block;
+padding-top:100px;
+}
+.row-text{
+text-align:left;
+width:50%;
+}
+.photo-right{
+margin-left:50px;
+}
+.photo-left{
+margin-right:50px;
+}
+.monaco-picture{
+margin-top:4em;
+}
+aside{
+margin-top:0;	
+padding:20px;
+padding-bottom:180px;
+line-height:1.7;
+float:left;
+height:100%;
+cursor:pointer;
+}
+.slides,.aside {
+display:inline-block;
+}
+.slides{
+	 position:relative;
+	  height:500px;
+	  width:1150px;
+
+ }
+.slide {
+	line-height:0;
+	padding-right:0;
+	float:none;
+position: absolute;
+ left: 30px;
+ top: 70px;
+width: 100%;
+height: 100%;	
+opacity: 0;
+z-index: 1;
+box-sizing: border-box;
+list-style-type: none;
+color:white;
+
+}
+
+.showing {
+opacity: 1;
+z-index: 2;
+}
+.slide:nth-of-type(1){
+	background-image:url("slider-1.jpg");
+}
+.slide:nth-of-type(2){
+	background-image:url("slider-2.jpg");
+}
+.slide:nth-of-type(3){
+	background-image:url("slider-3.jpg");
+}
+.slide:nth-of-type(4){
+	background-image:url("slider-4.jpg");
+}
+.wrapper{
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	text-align:center;
+	line-height:10;
+	font-size:1.4em;
+	font-weight: 500;
+}
+footer{
+background-color:black;
+color:white;
+line-height:2;
+position:absolute;
+    left: 0;
+    width: 100%;
+}
+.noline{
+	line-height:0;
+}
+
+@media screen and (max-width:1102px){
+.classlogo{
+	display:block;
+}
+.big{
+margin-left:0;
+margin-right:0;
+}
+.slides{
+	width:500px;
+}
+.wrapper{
+	line-height:3;
+}
+.row-text{
+	width:100%;
+	overflow:hidden;
+	text-align:left;
+	margin-left:20px;
+}
+.row{
+padding-top:0;
+}
+.monaco-picture{
+margin-top:1em;
+}
+.photo-left{
+	margin-left:40px;
+}
+.row{
+padding-top:0;
+}
+nav{
+display:none;
+}
+}
+@media screen and (min-width:540px) and (max-width:1501px){
+	.slides{
+	width:700px;
+}
+.row-text{
+	width:100%;
+	overflow:hidden;
+	text-align:left;
+	margin-left:0;
+}
+.wrapper{
+	line-height:3;
+}
+.row{
+padding-top:0;
+}
+.monaco-picture{
+margin-top:1em;
+}
+.classanchor1{
+padding-top:40px;
+}
+#logo{
+	margin-left:0;
+}
+}
+@media screen and (max-width:840px){
+.photo-left,.photo-right{
+	margin-left:0;
+}
+.slides{
+	width:250px;
+	margin-bottom:60px;
+}
+.substring{
+    display:none;
+}
+.monaco-size{
+   width:300px;
+   margin-left: 2em;
+}
+.row-text{
+	width:100%;
+	overflow:hidden;
+	text-align:left;
+	margin-left:0;
+}
+.row{
+padding-top:0;
+}
+.wrapper{
+	line-height:3;
+}
+.monaco-picture{
+margin-top:1em;
+}
+main{
+margin-left:0;
+}
+.big{
+margin-left:0;
+margin-right:0;
+}
+nav{
+display:none;
+}
+.classlogo{
+margin-left:0;
+}
+.footer{
+width:100%;
+}
+.destinclass{
+line-height:24px;
+}
+#logo{
+	margin-left:0;
+}
+}
+
+
+
+

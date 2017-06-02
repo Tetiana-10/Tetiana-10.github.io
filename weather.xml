@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weathers>
+<weather>
+<city name="city">Монако</city>
+<day name="day">24</day>
+<month name="month">04</month>
+<year name="year">2017</year>
+<hour name="hour">11</hour>
+<minute name="minute">26</minute>
+<temp name="temperature">25</temp>
+<wind name="wind">1.5</wind>
+</weather>
+
+<weather>
+<city name="city">Барселона</city>
+<day name="day">24</day>
+<month name="month">04</month>
+<year name="year">2017</year>
+<hour name="hour">11</hour>
+<minute name="minute">26</minute>
+<temp name="temperature">20.0</temp>
+<wind name="wind">0.5</wind>
+</weather>
+
+<weather>
+<city name="city">Венеция</city>
+<day name="day">24</day>
+<month name="month">04</month>
+<year name="year">2017</year>
+<hour name="hour">11</hour>
+<minute name="minute">26</minute>
+<temp name="temperature">18</temp>
+<wind name="wind">2.3</wind>
+</weather>
+
+<weather>
+<city name="city">Вена</city>
+<day name="day">24</day>
+<month name="month">04</month>
+<year name="year">2017</year>
+<hour name="hour">11</hour>
+<minute name="minute">26</minute>
+<temp name="temperature">12</temp>
+<wind name="wind">1.3</wind>
+</weather>
+</weathers>
