@@ -43,62 +43,61 @@ form{filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColo
     <body>
 	   <header class="header">
 		 <div class="header_item" id="logo"> Tourister</div>
-	     <div class="header_item  destinclass" id="destination"> Доступные направления</div>
-	     <div class="header_item destinclass" id="anketa">Заполнить анкeту </div>
-		 <div class="header_item" id="tour_creation">Создать свой идеальный тур </div>
+	     <div class="header_item  destinclass" id="destination"> Available destinations</div>
+	     <div class="header_item destinclass" id="anketa">Fill in the form </div>
+		 <div class="header_item" id="tour_creation">Create Your perfect tour </div>
 	   </header>
 	   
 	   <main>
-	   <h1>Заполните анкету и наши сотрудники подготовят для Вас наилучшие направления</h1>
+	   <h1>Fill out the questionnaire and our staff will prepare the best directions for you</h1>
 	   <form id="form1" onsubmit="return false">
 		  <div class="wrapper">
 		  <div class="essential">
-		  <p>Имя<br /><input type="text" name="firstname" class="formstyle" id="name" placeholder="Имя" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Разрешены как минимум 2 буквы"></p>
-		  <p>Фамилия<br /><input type="text" name="surname" class="formstyle" id="surname" placeholder="Фамилия" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Разрешены только буквы"></p>
-		  <p>Еmail<br /><input type="email" name="email" class="formstyle" pattern="^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$" required id="email" title="например - tanzu97@gmail.com" placeholder="E-mail"></p>
-		  <p>Выберите удобный оффис<br />
+		  <p>Имя<br /><input type="text" name="firstname" class="formstyle" id="name" placeholder="Name" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Input at least 2 letters"></p>
+		  <p>Фамилия<br /><input type="text" name="surname" class="formstyle" id="surname" placeholder="Surname" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Input letters"></p>
+		  <p>Еmail<br /><input type="email" name="email" class="formstyle" pattern="^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$" required id="email" title="example - ivan567@gmail.com" placeholder="E-mail"></p>
+		  <p>Choose office<br />
 				<select name="office" class="formstyle forselect " id="office">
-					<option value="not-selected">Выберете удобный оффис</option>
-					<option value="vas" class="vasclass" id="vas">г.Киев,ул.Васильковская, 25</option>
-					<option value="lva" id="lva">г.Киев,пл.Льва Толстого,11</option>
+					<option value="not-selected">Choose office</option>
+					<option value="vas" class="vasclass" id="vas">Kyiv, Vasilkovskaya str.,25</option>
+					<option value="lva" id="lva">Kyiv, Lomonosova str.,4</option>
 			    </select>
 		  </p>
-		  <p> Введите номер телефона:<br>
-		  <input type="tel" name="usrtel" class="formstyle" id="usrtel"  pattern="^\d{3}-\d{3}-\d{2}-\d{2}$" required title="Например: 099-712-21-80"></p>
-		  <p>В какую страну хотите поехать?<br>
+		  <p>Input phone number:<br>
+		  <input type="tel" name="usrtel" class="formstyle" id="usrtel"  pattern="^\d{3}-\d{3}-\d{2}-\d{2}$" required title="For example: 056-333-11-82"></p>
+		  <p>Which country do you want to visit?<br>
 		  <input list="country" class="formstyle" id = "countrylist" required name="countries" >
 		      <datalist id="country">
-			   <option value="Монако">Монако</option>
-			   <option value="Испания">Испания</option>
-			   <option value="Италия">Италия</option>
-			   <option value="Франция">Франция</option>
+			   <option value="Монако">Monaco</option>
+			   <option value="Испания">Spain</option>
+			   <option value="Италия">Italy</option>
+			   <option value="Франция">France</option>
 			   </datalist>
 			   </p>
-			   <p> Ссылка на понравившийся отель:<br>
+			   <p> Link to the hotel you would like to live:<br>
 		   <input type="url" name="link" class="formstyle" required id="link"></p>
-		  <p>Сколько человек в группе:<br />
-		  <input type="number" name="number" class="formstyle" id="number" min="1" max="10" required title="Количество от 1 до 10 людей"></p>
-		  <div class="formonaco"><p>Какого цвета кабриолет предпочитаете?:<br>
-          (для путешественников в Монако)</p></div>
+		  <p>How many tourists in the group:<br />
+		  <input type="number" name="number" class="formstyle" id="number" min="1" max="10" required title="From 1 to 10 people"></p>
+		  <div class="formonaco"><p>What color do you prefer?:</p></div>
 		  <p><input  type="color" name="color" class="formstyle" id="color"></p>
 		  </div>
 		  <div class="additional">
 		  
 		  <div class="foto">
-		  <label for="files">Выберете фото <br><br></label>
+		  <label for="files">Choose photo <br><br></label>
 		  <input class="fileinput" name="filename" onchange="previewFile()" type="file" id="files" /><br>
 		  <img src="#" height="200" alt="Image preview..."><br>
 		  </div>
 		 
-		  <label id="diduse">Вы уже пользовались услугами нашей компании?</label><br>
-		  <input type="radio" id="yes" class="rb" value="yes" required name="atmosfera"> <label for="yes">&nbsp; Да</label><br>
-		  <input type="radio" id="no" class="rb"  value="no" name="atmosfera"> <label for="no">&nbsp; Нет</label>
-		  <input type="submit" form="form1" class="btn" value="Отправить" id="button">
+		  <label id="diduse">Have you already used the services of our company?</label><br>
+		  <input type="radio" id="yes" class="rb" value="yes" required name="atmosfera"> <label for="yes">&nbsp; Yes</label><br>
+		  <input type="radio" id="no" class="rb"  value="no" name="atmosfera"> <label for="no">&nbsp; No</label>
+		  <input type="submit" form="form1" class="btn" value="Send" id="button">
 		 </div>
 		 </div>
 		 </form>
 		 <div class="personalisation">
-		 <h3 id="fill_form">Выбранные направления</h3>
+		 <h3 id="fill_form">Choosen destinations</h3>
 		 <p id="person_inf"> </p>
 		 <h3  id="fill_weather"></h3>
 		 <p id="person_weather"> </p>
