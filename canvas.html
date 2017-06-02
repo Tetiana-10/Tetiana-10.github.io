@@ -12,9 +12,9 @@
     <body onload="init()">
 	   <header class="header">
 		 <div class="header_item" id="logo"> Tourister</div>
-	     <div class="header_item  destinclass" id="destination"> Доступные направления</div>
-	     <div class="header_item destinclass" id="anketa">Заполнить анкeту </div>
-		 <div class="header_item" id="tour_creation">Создать свой идеальный тур </div>
+	     <div class="header_item  destinclass" id="destination"> Available destinations</div>
+	     <div class="header_item destinclass" id="anketa">Fill in the form </div>
+		 <div class="header_item" id="tour_creation">Create your perfect tour </div>
 	   </header>
 	  
 	   <main>
@@ -41,8 +41,8 @@
 		</div>
 		<div class="credintials">
 		<p>Нарисуйте рисунок, что бы выиграть приз</p>
-		<input id="name" type="text" placeholder="Имя" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Разрешены как минимум 2 буквы">
-		<input id="picture_name" type="text" placeholder="Название рисунка">
+		<input id="name" type="text" placeholder="Имя" pattern="[а-яА-ЯёЁa-zA-Z\s]{2,64}" required title="Input at least 2 letters">
+		<input id="picture_name" type="text" placeholder="Picture name">
 		</div>
 		<div class="buttons">
         <input type="button" class="button_draw" value="save" id="btn" size="30" onclick="save()">
@@ -50,33 +50,30 @@
 		</div>
 			   
 	   
-	  <h2>Победители прошлого конкурса рисунков</h2>
-	  <p>Нажмите на имя участника, что бы узнать больше</p>
-<div class="hint"><span class="prise1"></span><span>Бессплатный тур в Барселону</span></div>
-<div class="hint"><span class="prise2"></span><span>50% скидка на любое направление</span></div>
-<div class="hint"><span class="prise3"></span><span>500грн</span></div>
+	  <h2>The winners of the last drawing contest</h2>
+	  <p>Click on the participant's name to read more</p>
+<div class="hint"><span class="prise1"></span><span>Free tour to Barcelona</span></div>
+<div class="hint"><span class="prise2"></span><span>50% discount on any direction</span></div>
+<div class="hint"><span class="prise3"></span><span>200$</span></div>
 <ul id="gallery">
-  <li onclick="showDetails(this)" data-type="1" data-picture="Я люблю сиспрог">Саранцева Мария</li>
-  <li onclick="showDetails(this)" data-type="2" data-picture="Макет нового здания библиотеки Максимовича">Сапега Иван</li>
-  <li onclick="showDetails(this)" data-type="3" data-picture="Красота - это Козырь">Моторная Евгения</li>
-  <li onclick="showDetails(this)" data-type="1" data-picture="Как продать все  время">Тарасенко Артем</li>
-  <li onclick="showDetails(this)" data-type="2" data-picture="Кава в трамваї">Мозиль Даша</li>
-  <li onclick="showDetails(this)" data-type="2" data-picture="В Минске:)">Межделова Дарья</li>
-  <li onclick="showDetails(this)" data-type="1" data-picture="Как посетить все лекции в семестре">Коминко Виталий</li>
-  <li onclick="showDetails(this)" data-type="3" data-picture="Расскрась скучную лекцию!">Камбур Мария</li>
-  <li onclick="showDetails(this)" data-type="3" data-picture="Вечер с гитарой">Сокотун Никита</li>
+  <li onclick="showDetails(this)" data-type="1" data-picture="My Mother">Sarantseva Maria</li>
+  <li onclick="showDetails(this)" data-type="2" data-picture="In the sea">Sapega Ivan</li>
+  <li onclick="showDetails(this)" data-type="3" data-picture="The fairytaile">Motornaya Evgenia</li>
+  <li onclick="showDetails(this)" data-type="1" data-picture="Holidays in  Rome">Tarasenko Artem</li>
+  <li onclick="showDetails(this)" data-type="2" data-picture="Family evening">Mozil Daria</li>
+  <li onclick="showDetails(this)" data-type="2" data-picture="The best day of my life">Onuchyk Rodion</li>
 </ul>
 <div id="anim_div"></div>
 <div id="anim_div_1"></div>
 
-<button id="move_button">Успеет ли пингвин доплыть до яблока?<br/></button>
+<button id="move_button">Play the game!<br/></button>
           </p>
         <div class="ufo_container">
-		    <h3>Нажмите на сердечко </h3>
+		    <h3>Click on heart</h3>
             <img class="heart" id="cat" src="http://s1.iconbird.com/ico/2013/7/398/w128h1281374354860heart.png" alt="ufo">
         </div>
         <p>
-        <h3   id="tips"> Выберите самое главное для Вас в отдыхе</h3>
+        <h3   id="tips">Choose the most important things in Your holidays</h3>
 		<div id="div1" class="dropzone"  ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
 		<div id="div2" class="dropzone copyzone"  ondrop="dropcopy(event)" ondragover="allowDrop(event)" ></div>
 		<img src="http://s1.iconbird.com/ico/1012/FreeGameIcons/w64h641351529013Tree.png" id="drag1" width="100" height="100" draggable="true" alt="tree" ondragstart="drag(event)">
