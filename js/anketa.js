@@ -29,7 +29,7 @@
     });
     $("#logo").click (function () {
 		"use strict";
-        window.location.href = "./main.html";
+        window.location.href = "./index.html";
     });
     $("#anketa").click (function () {
 		"use strict";
