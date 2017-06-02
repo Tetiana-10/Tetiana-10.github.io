@@ -35,11 +35,7 @@ $("#anketa").click = function () {
     "use strict";
     document.location.href = "./anketa.html";
 };
-$("#logo").click = function () {
-    "use strict";
-    alert("aaa");
-    document.location.href = "./destin.html";
-};
+
 $("#tour_creation").mouseover = function () {
     "use strict";
     $("#tour_creation").css("color", "rgb(187,187,187)");
