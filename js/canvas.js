@@ -37,7 +37,7 @@ $("#anketa").click = function () {
 };
 $("#logo").click = function () {
     "use strict";
-    document.location.href = "./index.html";
+    document.location.href = "./destin.html";
 };
 $("#tour_creation").mouseover = function () {
     "use strict";
